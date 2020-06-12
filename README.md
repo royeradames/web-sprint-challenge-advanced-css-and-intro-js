@@ -77,3 +77,18 @@ Follow these steps for completing your project.
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master
+
+
+Extra questions by Brit Hemming:
+1. How would you describe acessibility on the web to someone new to programming?
+Making websites useable for everybody
+2. Talk about 3 different things you can do to ensure your website is accessible
+alt tags that describe the content of the images
+semantic html
+big hit boxes for things that can be clicked on
+
+3. How would you explain the concept of a variable to someone new to programming?
+variable are like 'x' in algebra
+
+4. What is the purpose of using functions in code?
+make code reusable
