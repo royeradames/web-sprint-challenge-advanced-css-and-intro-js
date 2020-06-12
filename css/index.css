@@ -15,6 +15,7 @@ time, mark, audio, video {
 margin: 0;  
 padding: 0;  
 border: 0;  
+/* border: 1px solid grey;   */
 font-size: 100%;  
 font: inherit;  
 vertical-align: baseline;  
@@ -22,6 +23,7 @@ vertical-align: baseline;
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
+    max-width: 100%;
 }
 body{
     font-size:1.6rem;
@@ -133,4 +135,38 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+
+/* media quearies */
+@media(max-width: 500px){
+    /* nav */
+    nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:5%;
+    }
+    nav span{
+        margin: 1rem
+    }
+
+    /*landing page image */
+    .title-container div {	
+        width:100%;
+    }	
+
+    /* body content */
+    .artists-container{
+        flex-direction: column;
+       
+    }
+    .artist{
+        width:100%;
+    }
+    .artist img{
+        width:80%;
+    }
+    .title-container hr {
+        width: 100%;
+    }
 }
