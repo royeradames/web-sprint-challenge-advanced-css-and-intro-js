@@ -311,35 +311,35 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(artistsData, newArtistData){
+// function addArtist(artistsData, newArtistData){
   
-  if(newArtistData.length - 1 === 0)
-  {
-    artistsData.push(newArtistData[0]);
-  }else if(newArtistData.length > 0){
-    for(let i = 0; i < artistsData.length; i++){
-      artistsData.push(newArtistData[i]);
-    }
-  }
+//   if(newArtistData.length - 1 === 0)
+//   {
+//     artistsData.push(newArtistData[0]);
+//   }else if(newArtistData.length > 0){
+//     for(let i = 0; i < artistsData.length; i++){
+//       artistsData.push(newArtistData[i]);
+//     }
+//   }
 
   
-  console.log("All new artists data have been added.")  
+//   console.log("All new artists data have been added.")  
 
-  }
-  const newArtist = [
-    {
-    id: 21,
-    name: "Royer Adames",
-    years: "1994 - 2020",
-    genre: "Symbolism",
-    nationality: "American",
-    bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda reiciendis? Possimus iste doloremque excepturi architecto, facere quos recusandae rem deleniti harum dolorum fugit quis sit, saepe totam adipisci fuga!",
-  }
-]
-  console.log(artists)
-  addArtist(artists, newArtist);
-  console.log(artists)
-// console.log(artists)
+//   }
+//   const newArtist = [
+//     {
+//     id: 21,
+//     name: "Royer Adames",
+//     years: "1994 - 2020",
+//     genre: "Symbolism",
+//     nationality: "American",
+//     bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda reiciendis? Possimus iste doloremque excepturi architecto, facere quos recusandae rem deleniti harum dolorum fugit quis sit, saepe totam adipisci fuga!",
+//   }
+// ]
+//   console.log(artists)
+//   addArtist(artists, newArtist);
+//   console.log(artists)
+
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -349,14 +349,22 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(artistsData){
+  let paintings; 
+  const lotsOfPaintings = 100, sirsPaintsALot = [];
+  for(let i = 0; i < artistsData.length; i++)
+  {
+    paintings = artistsData[i].paintings;
 
-  /* Code here */
-
+    if(paintings >= lotsOfPaintings){
+      sirsPaintsALot.push(artistsData[i].name);
+    }
+  }
+  return sirsPaintsALot;
 }
 
 
-
+console.log(lotsOfArt(artists))
 // 🎨🎨 STRETCH 🎨🎨//
 
 
