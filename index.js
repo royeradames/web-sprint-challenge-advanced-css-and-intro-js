@@ -311,12 +311,19 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(artistsData){
-  for(let i = 0; i < artistsData.length; i++){
-    artistsData.push(artistsData[i]);
-
+function addArtist(artistsData, newArtistData){
+  
+  if(newArtistData.length - 1 === 0)
+  {
+    artistsData.push(newArtistData[0]);
+  }else if(newArtistData.length > 0){
+    for(let i = 0; i < artistsData.length; i++){
+      artistsData.push(newArtistData[i]);
+    }
   }
-  console.log("All new artists have been added.")  
+
+  
+  console.log("All new artists data have been added.")  
 
   }
   const newArtist = [
@@ -329,7 +336,9 @@ function addArtist(artistsData){
     bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda reiciendis? Possimus iste doloremque excepturi architecto, facere quos recusandae rem deleniti harum dolorum fugit quis sit, saepe totam adipisci fuga!",
   }
 ]
-  addArtist(artists);
+  console.log(artists)
+  addArtist(artists, newArtist);
+  console.log(artists)
 // console.log(artists)
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
