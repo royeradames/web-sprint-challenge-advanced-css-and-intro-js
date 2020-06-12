@@ -349,22 +349,23 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(artistsData){
-  let paintings; 
-  const lotsOfPaintings = 100, sirsPaintsALot = [];
-  for(let i = 0; i < artistsData.length; i++)
-  {
-    paintings = artistsData[i].paintings;
+// function lotsOfArt(artistsData){
+//   let paintings; 
+//   const lotsOfPaintings = 100, sirsPaintsALot = [];
+//   for(let i = 0; i < artistsData.length; i++)
+//   {
+//     paintings = artistsData[i].paintings;
 
-    if(paintings >= lotsOfPaintings){
-      sirsPaintsALot.push(artistsData[i].name);
-    }
-  }
-  return sirsPaintsALot;
-}
+//     if(paintings >= lotsOfPaintings){
+//       sirsPaintsALot.push(artistsData[i].name);
+//     }
+//   }
+//   return sirsPaintsALot;
+// }
 
 
-console.log(lotsOfArt(artists))
+// console.log(lotsOfArt(artists))
+
 // 🎨🎨 STRETCH 🎨🎨//
 
 
@@ -388,18 +389,22 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+function getHTML(artists){
 
-    /* Code here */
-
+    // console.log(document.querySelector(".artist"));
+    for(let i = 0; i < artists.length; i++)
+    {
+      
+    }
   }
-
+  getHTML(artists);
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
 function randomize(/* Code here */){
 
     /* Code here */
+
 
   }
 
